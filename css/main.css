@@ -1,0 +1,51 @@
+body {
+    font-family: 'Overpass';
+    font-style: normal;
+    padding-top: 100px;
+    background-color:#FAF2F0;
+}
+
+.navbar-light,.navbar-nav{
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 100.5%;
+    /* identical to box height, or 14px */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.155em;
+    
+    /* #0C0A3C */
+    
+    color: black !important;
+    opacity: 1;
+    }
+    
+    .nav-link{
+      text-transform: uppercase;
+      display: inline-block;
+      position: relative;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      color: black !important;
+    }
+    .nav-link:hover {
+      opacity: 1;
+    }
+    
+    .nav-link::before {
+      transition: 300ms;
+      height: 2px;
+      content: "";
+      position: absolute;
+      background-color: black;
+    }
+    
+    .nav-link-ltr::before {
+      width: 0%;
+      bottom: 5px;
+    }
+    
+    .nav-link-ltr:hover::before {
+      width: 100%;
+    }

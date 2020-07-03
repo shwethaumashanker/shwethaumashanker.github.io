@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98" height="98" viewBox="0 0 98 98">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1.038" y1="0.5" x2="0.03" y2="0.546" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#89d6ff"/>
+      <stop offset="1" stop-color="#72b3ff"/>
+    </linearGradient>
+  </defs>
+  <path id="Union_1" data-name="Union 1" class="cls-1" d="M0,49a49,49,0,0,1,98,0c0,.5-.008,1-.023,1.5.015.33.023.662.023,1a21.563,21.563,0,0,1-.544,4.829A49,49,0,0,1,0,49Z"/>
+</svg>

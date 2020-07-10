@@ -1,8 +1,22 @@
 body {
     font-family: 'Overpass';
     font-style: normal;
+   /* background-color:#FAF2F0;*/
     padding-top: 100px;
+}
+
+.background-color{
     background-color:#FAF2F0;
+}
+
+.back{
+    background-image:url("../img/blob\ \(2\).svg");
+    background-color: #e1afa4;
+
+    /* Center and scale the image nicely */
+    background-position:right;
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 .navbar-light,.navbar-nav{
@@ -181,7 +195,7 @@ h6 {
     border: solid 1px #e5e5e5;
     border-radius: 5px;
     outline: none;
-    color: #0e8ce4;
+    color: black;
     -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
     -ms-transition: all 200ms ease;
@@ -241,7 +255,7 @@ h6 {
     padding-top: 15px;
     border: solid 1px #e5e5e5;
     border-radius: 5px;
-    color: #0e8ce4;
+    color: black;
     outline: none;
     -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;

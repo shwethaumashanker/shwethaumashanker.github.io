@@ -1,9 +1,11 @@
 body {
     font-family: 'Overpass';
     font-style: normal;
-   /* background-color:#FAF2F0;*/
+   
     padding-top: 100px;
 }
+
+
 
 .background-color{
     background-color:#FAF2F0;
@@ -12,7 +14,6 @@ body {
 .back{
     background-image:url("../img/blob\ \(2\).svg");
     background-color: #e1afa4;
-
     /* Center and scale the image nicely */
     background-position:right;
     background-repeat: repeat;
@@ -78,6 +79,13 @@ body {
       font-family: 'Norwester', arial;
       font-size: 20px;
     }
+
+    .sub-header{
+        font-weight:bold;
+        text-transform: uppercase;
+    }
+
+    
 
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Rubik:300,400,500,700,900');
@@ -325,6 +333,14 @@ h6 {
 .footer{
   display: inline-flex;
   font-size: 12px;
+}
+
+.card-design{
+background: #FFFFFF;
+border: 1px solid #DADADA;
+box-sizing: border-box;
+box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.04);
+border-radius: 20px;
 }
 
 

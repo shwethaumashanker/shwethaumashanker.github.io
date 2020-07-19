@@ -88,7 +88,7 @@
   .timeline-info {
     margin: 0 0 0.5em 0;
     white-space: nowrap;
-    text-align: right;
+   
   }
 
   .timeline-info span{
@@ -234,6 +234,9 @@
     .timeline-split .period .timeline-title, .timeline-centered .period .timeline-title {
       position: relative;
       left: -45px;
+    }
+    .timeline-info {
+      text-align: right;
     }
   }
   

@@ -8,13 +8,13 @@
     color: #3d4351;
     margin-top: 0;
   }
-  
-  a {
-    color: #ff6b6b;
+
+  .social{
+    color: black;
   }
-  a:hover {
-    color: #ff9a9a;
-    text-decoration: none;
+
+  .social:hover{
+    color: black;
   }
   
   .example-header {
@@ -36,12 +36,6 @@
     font-weight: 700;
   }
   
-  .container-fluid .p-t {
-    padding: 74px 0px 0px 0px;
-  }
-  .container-fluid .row:nth-child(even) {
-    background: #f1f4f5;
-  }
   
   .example-title {
     text-align: center;

@@ -119,6 +119,14 @@ body {
         text-transform: uppercase;
     }
 
+    .about-me-text{
+    font-family: "IBM Plex Mono",monospace;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #6b6768;
+    }
+
     .skill{
         font-family: "IBM Plex Mono",monospace;
     font-size: 15px;

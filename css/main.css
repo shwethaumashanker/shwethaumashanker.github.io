@@ -4,148 +4,164 @@ body {
     padding-top: 100px;
 }
 
-
-
-.background-color{
-    background-color:#FAF2F0;
+.background-color {
+    background-color: #FAF2F0;
 }
 
-.project{
+.project {
     border-left: 5px solid #C7D7DB;
-} 
-
-.project-background{
-    background-color:#F5EBE8;
 }
 
-.resume{
+.hobbies-b{
+    border: 10px solid #C7D7DB;
+}
+
+.hobbies{
+    color: #0a1a2b;
+    font-family: "IBM Plex Mono",monospace;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.project-background {
+    background-color: #F5EBE8;
+}
+
+.resume {
     border-color: #000;
     border-radius: 5px;
-    background-color:transparent;
+    background-color: transparent;
     border-width: 3px;
     text-align: center;
 }
 
-.resume-font{
+.resume-font {
     font-size: 20px;
-    padding-right:5px;
-    font-weight:bold;
+    padding-right: 5px;
+    font-weight: bold;
 }
 
-.resume:hover{
-    background-color:black;
-    color:white;
+.resume:hover {
+    background-color: black;
+    color: white;
 }
 
-.back{
-    background-image:url("../img/blob\ \(2\).svg");
+.back {
+    background-image: url("../img/blob\ \(2\).svg");
     background-color: #e1afa4;
     /* Center and scale the image nicely */
-    background-position:right;
+    background-position: right;
     background-repeat: repeat;
     background-size: cover;
 }
 
-.navbar-light,.navbar-nav{
+.navbar-light, .navbar-nav {
     font-weight: 800;
     font-size: 14px;
     line-height: 100.5%;
     /* identical to box height, or 14px */
-    
     display: flex;
     align-items: center;
     letter-spacing: 0.155em;
-    
     /* #0C0A3C */
-    
     color: black !important;
     opacity: 1;
-    }
-    
-    .nav-link{
-      text-transform: uppercase;
-      display: inline-block;
-      position: relative;
-      padding-right: 0 !important;
-      padding-left: 0 !important;
-      color: black !important;
-    }
-    .nav-link:hover {
-      opacity: 1;
-    }
-    
-    .nav-link::before {
-      transition: 300ms;
-      height: 2px;
-      content: "";
-      position: absolute;
-      background-color: black;
-    }
-    
-    .nav-link-ltr::before {
-      width: 0%;
-      bottom: 5px;
-    }
-    
-    .nav-link-ltr:hover::before {
-      width: 100%;
-    }
+}
 
-    .big-header{
-        font-weight:bold;
-        
-      font-size: 40px;
-    }
+.nav-link {
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    color: black !important;
+}
 
-    .header{
-        font-weight:bold;
-      font-size: 40px;
-    }
+.nav-link:hover {
+    opacity: 1;
+}
 
-    .text{
-      font-size: 20px;
-    }
+.nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: black;
+}
 
-    .bold{
-        font-weight:bold;
-    }
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 5px;
+}
 
-    .sub-header{
-        color: #0a1a2b;
-        font-family: "IBM Plex Mono",monospace;
-        font-size: 18px;
-        font-weight: 600;
-        letter-spacing: .1em;
-        text-transform: uppercase;
-    }
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
 
-    .about-me-text{
-    font-family: "IBM Plex Mono",monospace;
+.big-header {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.sub-header {
+    color: #0a1a2b;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.about-me-text {
+    font-family: "IBM Plex Mono", monospace;
     font-size: 17px;
     line-height: 30px;
     font-weight: 400;
     color: #6b6768;
-    }
+}
 
-    .skill{
-        font-family: "IBM Plex Mono",monospace;
+.skill {
+    font-family: "IBM Plex Mono", monospace;
     font-size: 15px;
     line-height: 30px;
     font-weight: 400;
     color: #6b6768;
-    }
+}
 
-    
+.crop {
+    width: 200px;
+    /* width of container */
+    height: 200px;
+    /* height of container */
+    object-fit: cover;
+    border: 5px solid black;
+}
 
+.inline{
+    display: inline-block;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Rubik:300,400,500,700,900');
-
 * {
     -webkit-font-smoothing: antialiased;
     -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px
 }
-
 
 div {
     display: block;
@@ -155,12 +171,7 @@ div {
     box-sizing: border-box
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     -webkit-font-smoothing: antialiased;
     -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px
@@ -238,16 +249,16 @@ h6 {
 
 .contact_form_title {
     color: #0a1a2b;
-    font-family: "IBM Plex Mono",monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
 }
 
-.contact_form_text{
+.contact_form_text {
     margin-bottom: 37px;
-    font-family: "IBM Plex Mono",monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 15px;
     line-height: 30px;
     font-weight: 400;
@@ -259,7 +270,7 @@ h6 {
 }
 
 .input_field {
-    font-family: "IBM Plex Mono",monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 17px;
     line-height: 30px;
     font-weight: 400;
@@ -278,46 +289,39 @@ h6 {
     transition: all 200ms ease
 }
 
-.input_field:focus,
-.text_field:focus {
+.input_field:focus, .text_field:focus {
     border-color: #b2b2b2
 }
 
-.input_field:hover,
-.text_field:hover {
+.input_field:hover, .text_field:hover {
     border-color: #b2b2b2
 }
 
-.input_field::-webkit-input-placeholder,
-.text_field::-webkit-input-placeholder {
+.input_field::-webkit-input-placeholder, .text_field::-webkit-input-placeholder {
     font-size: 16px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.3)
 }
 
-.input_field:-moz-placeholder,
-.text_field:-moz-placeholder {
+.input_field:-moz-placeholder, .text_field:-moz-placeholder {
     font-size: 16px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.3)
 }
 
-.input_field::-moz-placeholder,
-.text_field::-moz-placeholder {
+.input_field::-moz-placeholder, .text_field::-moz-placeholder {
     font-size: 16px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.3)
 }
 
-.input_field:-ms-input-placeholder,
-.text_field:-ms-input-placeholder {
+.input_field:-ms-input-placeholder, .text_field:-ms-input-placeholder {
     font-size: 16px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.3)
 }
 
-.input_field::input-placeholder,
-.text_field::input-placeholder {
+.input_field::input-placeholder, .text_field::input-placeholder {
     font-size: 16px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.3)
@@ -358,13 +362,13 @@ h6 {
 }
 
 .navbar-fixed-top.scrolled {
-  background-color: #fff !important;
-  color: #0C0A3C !important;
-  transition: background-color 200ms linear;
+    background-color: #fff !important;
+    color: #0C0A3C !important;
+    transition: background-color 200ms linear;
 }
 
 .navbar-fixed-top.scrolled .nav-link {
-  color:#0C0A3C !important;
+    color: #0C0A3C !important;
 }
 
 @media only screen and (max-width: 991px) {
@@ -372,7 +376,6 @@ h6 {
         width: 100%;
         margin-bottom: 30px
     }
-
     .contact_info_item:last-child {
         margin-bottom: 0px
     }
@@ -383,7 +386,6 @@ h6 {
         margin-bottom: 30px;
         width: 100%
     }
-
     .input_field:last-child {
         margin-bottom: 0px
     }
@@ -397,18 +399,15 @@ h6 {
     }
 }
 
-.footer{
-  display: inline-flex;
-  font-size: 12px;
+.footer {
+    display: inline-flex;
+    font-size: 12px;
 }
 
-.card-design{
-background: #FFFFFF;
-border: 1px solid #DADADA;
-box-sizing: border-box;
-box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.04);
-border-radius: 20px;
+.card-design {
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
 }
-
-
-    

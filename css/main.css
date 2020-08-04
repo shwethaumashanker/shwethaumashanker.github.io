@@ -12,9 +12,6 @@ body {
     border-left: 5px solid #C7D7DB;
 }
 
-.hobbies-b{
-    border: 10px solid #C7D7DB;
-}
 
 .hobbies{
     color: #0a1a2b;
@@ -149,12 +146,9 @@ body {
     height: 200px;
     /* height of container */
     object-fit: cover;
-    border: 5px solid black;
+    border: 3px solid black;
 }
 
-.inline{
-    display: inline-block;
-}
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Rubik:300,400,500,700,900');
 * {

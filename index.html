@@ -28,6 +28,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_g2VVVi5nTySj4TuF5XhTk");
+        })();
+    </script>
 
 </head>
 
@@ -387,20 +394,20 @@
                             </div>
 
                             <div class="col-md-6 text-center  mx-auto wow fadeInRight">
-                                    <div class="row">
-                                        <div class="mx-auto">
-                                                <img class="img-fluid crop" src="img/swimming1.jpg">
-                                                <p class="hobbies pt-2">Swimming</p>
-                                        </div>
-                                        <div class="mx-auto">
-                                                <img class="img-fluid crop" src="img/hinking2.jpg">
-                                                <p class="hobbies pt-2">hiking</p>
-                                        </div>
+                                <div class="row">
+                                    <div class="mx-auto">
+                                        <img class="img-fluid crop" src="img/swimming1.jpg">
+                                        <p class="hobbies pt-2">Swimming</p>
                                     </div>
-    
+                                    <div class="mx-auto">
+                                        <img class="img-fluid crop" src="img/hinking2.jpg">
+                                        <p class="hobbies pt-2">hiking</p>
+                                    </div>
                                 </div>
 
-                            
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -417,27 +424,32 @@
                                         <p class="contact_form_text wow fadeInLeft">If you've opportunities for me, or
                                             just want to say hi, always feel free to reach me via Email or Mobile. I'd
                                             be very happy to connect.</p>
-                                        <form action="#" id="contact_form">
+                                        <form id="contact-form">
                                             <div
                                                 class="contact_form_inputs d-flex flex-md-row flex-column justify-content-between align-items-between">
-                                                <input type="text" id="contact_form_name"
+                                                <input type="text" id="contact_form_name" name="from_name"
                                                     class="contact_form_name input_field wow fadeInLeft"
                                                     placeholder="Your name" required="required"
                                                     data-error="Name is required.">
-                                                <input type="text" id="contact_form_email"
+                                                <input type="email" id="contact_form_email" name="from_email"
                                                     class="contact_form_email input_field wow fadeInLeft"
                                                     placeholder="Your email" required="required"
-                                                    data-error="Email is required."> <input type="text"
-                                                    id="contact_form_phone"
+                                                    data-error="Email is required.">
+                                                <input type="text" id="contact_form_phone" name="from_number"
                                                     class="contact_form_phone input_field wow fadeInLeft"
-                                                    placeholder="Your phone number"> </div>
+                                                    placeholder="Your phone number">
+                                            </div>
                                             <div class="contact_form_text"> <textarea id="contact_form_message"
                                                     class="text_field contact_form_message wow fadeInLeft"
                                                     name="message" rows="4" placeholder="Message" required="required"
-                                                    data-error="Please, write us a message."></textarea> </div>
-                                            <div class="contact_form_button"> <button type="submit"
-                                                    class="button contact_submit_button wow fadeInLeft">Send
-                                                    Message</button> </div>
+                                                    data-error="Please, write us a message."></textarea>
+                                            </div>
+                                            <div class="contact_form_button">
+                                                <button type="submit"
+                                                    class="button contact_submit_button wow fadeInLeft"
+                                                    value="Send">Send
+                                                    Message</button>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
@@ -499,6 +511,29 @@
             <script src="js/wow.js/dist/wow.js"></script>
             <script>
                 new WOW().init();
+            </script>
+            <script type="text/javascript">
+                window.onload = function () {
+                    document.getElementById('contact-form').addEventListener('submit', function (event) {
+                        event.preventDefault();
+                        var template_params = {
+                            "reply_to": this.from_email.value,
+                            "from_name": this.from_name.value,
+                            "to_name": "Shwetha",
+                            "number": this.from_number.value,
+                            "message_html": this.message.value
+                        }
+
+                        var service_id = "default_service";
+                        var template_id = "template_brVWqOfj";
+                        emailjs.send(service_id, template_id, template_params)
+                        .then(function (response) {
+                            console.log('SUCCESS!', response.status, response.text);
+                        }, function (error) {
+                            console.log('FAILED...', error);
+                        });
+                    });
+                }
             </script>
 </body>
 
